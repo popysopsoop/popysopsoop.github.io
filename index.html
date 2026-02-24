@@ -1,103 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Carlos's APK Vault</title>
+<meta charset="UTF-8">
+<title>Carlos's Vault</title>
 
-  <style>
-    body {
-      font-family: "Courier New", monospace;
-      background-color: #000;
-      margin: 0;
-      padding: 40px 20px;
-      color: white;
-      display: flex;
-      justify-content: center;
-    }
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Courier New", monospace;
+    background: radial-gradient(circle at center, #1a1a1a 0%, #000 70%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+  }
 
-    .container {
-      width: 100%;
-      max-width: 700px;
-    }
+  .vault-container {
+    width: 100%;
+    max-width: 750px;
+    background: linear-gradient(145deg, #2b2b2b, #111);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 
+      inset 0 0 30px rgba(0,0,0,0.9),
+      0 0 40px rgba(255,0,0,0.2);
+    border: 4px solid #444;
+  }
 
-    h1 {
-      text-align: center;
-      color: red;
-      font-size: 42px;
-      margin-bottom: 40px;
-      letter-spacing: 2px;
-    }
+  h1 {
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    font-size: 42px;
+    letter-spacing: 4px;
+    margin-bottom: 40px;
+    text-shadow: 0 0 10px red, 0 0 20px darkred;
+  }
 
-    .game {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: #0a1f44; /* Dark blue */
-      padding: 18px 20px;
-      margin-bottom: 15px;
-      border-radius: 12px;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
+  .game {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(145deg, #0f1f3a, #081225);
+    padding: 20px;
+    margin-bottom: 18px;
+    border-radius: 15px;
+    border: 2px solid #333;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.8);
+    transition: all 0.25s ease;
+  }
 
-    .game:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    }
+  .game:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(255,0,0,0.4);
+  }
 
-    .game span {
-      color: red;
-      font-weight: bold;
-      font-size: 18px;
-    }
+  .game span {
+    color: red;
+    font-weight: bold;
+    font-size: 18px;
+    text-shadow: 0 0 5px red;
+  }
 
-    .download-btn {
-      padding: 8px 16px;
-      background-color: #28a745;
-      color: white;
-      text-decoration: none;
-      border-radius: 6px;
-      font-size: 14px;
-      font-weight: bold;
-      transition: background-color 0.2s ease;
-    }
+  .download-btn {
+    background: #222;
+    color: red;
+    font-weight: bold;
+    padding: 10px 18px;
+    text-decoration: none;
+    border-radius: 8px;
+    border: 2px solid red;
+    transition: all 0.25s ease;
+  }
 
-    .download-btn:hover {
-      background-color: #218838;
-    }
-  </style>
+  .download-btn:hover {
+    background: red;
+    color: black;
+    box-shadow: 0 0 15px red;
+  }
+
+  .vault-door {
+    width: 120px;
+    height: 120px;
+    border: 6px solid #555;
+    border-radius: 50%;
+    margin: 0 auto 30px auto;
+    box-shadow: inset 0 0 20px black, 0 0 15px #333;
+    background: radial-gradient(circle, #333 0%, #111 80%);
+  }
+
+</style>
 </head>
 
 <body>
 
-  <div class="container">
-    <h1>Carlos's APK Vault</h1>
+<div class="vault-container">
 
-    <div class="game">
-      <span>Bloons TD 6</span>
-      <a class="download-btn" href="https://mega.nz/file/xUFxwIxQ#OE4JG-s8lwikb6g5N1elcLO0GqZ9WpKzhIdAdAVbFiE" target="_blank">Download</a>
-    </div>
+  <div class="vault-door"></div>
 
-    <div class="game">
-      <span>Minecraft</span>
-      <a class="download-btn" href="https://mega.nz/file/dZcXHKzI#0rH85c7evzout1s1W_QAtF8tvlEL_MU4G6SPcPmPs0k" target="_blank">Download</a>
-    </div>
+  <h1>CARLOS'S VAULT</h1>
 
-    <div class="game">
-      <span>Hollow Knight: Silksong</span>
-      <a class="download-btn" href="https://mega.nz/file/9Q8j0QgA#VSYPGCMZZ5OHJiOi_y9ugWZWljlwWrQpmwTf5_IY554" target="_blank">Download</a>
-    </div>
-
-    <div class="game">
-      <span>Hollow Knight</span>
-      <a class="download-btn" href="https://mega.nz/file/tN9yQYjQ#3DJZ7hOL0T2RTXz7-Jsgxa7pHa5xLrLhNN_CZZmUT10" target="_blank">Download</a>
-    </div>
-
-    <div class="game">
-      <span>Terraria</span>
-      <a class="download-btn" href="https://mega.nz/file/4MdQjRrT#wHd4WSZwXBh0PiPgnsW1oNsSz0PIhOV__moWGmoVBUA" target="_blank">Download</a>
-    </div>
-
+  <div class="game">
+    <span>Bloons TD 6</span>
+    <a class="download-btn" href="#">Download</a>
   </div>
+
+  <div class="game">
+    <span>Minecraft</span>
+    <a class="download-btn" href="#">Download</a>
+  </div>
+
+  <div class="game">
+    <span>Hollow Knight: Silksong</span>
+    <a class="download-btn" href="#">Download</a>
+  </div>
+
+  <div class="game">
+    <span>Hollow Knight</span>
+    <a class="download-btn" href="#">Download</a>
+  </div>
+
+  <div class="game">
+    <span>Terraria</span>
+    <a class="download-btn" href="#">Download</a>
+  </div>
+
+</div>
 
 </body>
 </html>
